@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Cinzel', serif; 
+    background-color: hsl(215, 100%, 96%);
+    font-size: 15px;
+    height: 100vh;
+}
+
+
+    
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding:40px;
+    width:100%;
+    background-color: rgb(161, 175, 197);
+    font-size: x-large;
+}
+
+
+header a #logo {
+    
+    position: absolute;  /* Posiciona el elemento de manera absoluta */
+    top: 0;  /* Alinea el elemento con el borde superior de la página */
+    left: 95%;  /* Posiciona el centro del elemento en el 50% del ancho de la página */
+    transform: translateX(-50%);  /* Mueve el elemento hacia la izquierda para que quede centrado */
+
+    text-align: center;  /* Centra el contenido dentro del contenedor */
+    padding: 10px;  /* Agrega un poco de espacio alrededor del contenido */
+
+}
+header h1 {
+    font-size:100%;
+    color:rgb(0, 0, 0);
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background-color:white;
+    border-radius: 10px;
+}
+.formulario h1{
+    text-align: center;
+    padding: 0, 0, 20px, 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.formulario .username{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.username span::before{
+    content: " ";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(202, 151, 95);
+    transition: .5s;
+}
+
+.username input:focus ~ label,
+.username input:focus ~ label{
+        top: -5px;
+        color:#1e2c7c;
+}
+
+.username input:focus ~ span::before
+.username input:focus ~ span::before{
+    width: 100%;
+}
+
+.recordar{
+    margin: -5px 0 20px 80px;
+    color: #1e2c7c;
+    cursor: pointer;
+}
+
+.recordar:hover{
+    text-decoration:underline;
+
+
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background-color: rgb(249, 191, 130);
+    border-radius: 25px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="submit"]:hover{
+    border-color: #bfaa5b;
+    transition: .5s;
+}
+
+.registrarse{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.registrarse a{
+    color: #1e2c7c;
+    text-decoration: none;
+}
+
+.registrarse a:hover{
+    text-decoration: underline;
+}
+
+
+#logo1{
+    size: 100%;
+    width: 30%;
+    position: relative;
+    left:100px ;
+    top:100px ;
+    
+}
+#logo2{
+    size: 100%;
+    width: 30%;
+    position: relative;
+    left:450px;
+    top:100px ;
+    
+}

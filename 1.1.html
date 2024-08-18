@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Bank</title>
+    <link rel="icon" href="Logo Timebank.png" type="logo-nav">
+    <link rel="stylesheet" href="estilos.css"/link>
+</head>
+<body>
+
+<header>
+    <a href="#" onclick="recargar()">
+        <h1>Time Bank</h1>
+        <img id="logo" width="100" height="100" alt="Logo del banco / recargar la página" src="Logo Timebank.png">
+    </a>
+    <div class="contenedor">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle">
+            <img src="menulogo.webp" width="50" height="50" alt="menu desplegable" class="desplegable-icon">
+        </label>
+        <nav id="desplegable">
+            <ul>
+                <li><a href="#" onclick="mostrarContenido('home')">Inicio</a><br></li>
+                <li><a href="#" onclick="mostrarContenido('cuentas')">Cuentas</a><br></li>
+                <li><a href="#" onclick="mostrarContenido('prestamos')">Préstamos</a><br></li>
+                <li><a href="#" onclick="mostrarContenido('tarjetas')">Transferencias</a><br></li>
+                <li><a href="login_simulacion.html" ">Salir</a><br></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+
+</div>
+        <script>
+            function desplegar() {
+                var content = document.getElementById('desplegable');
+                if (content.style.display === 'none') {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            }
+        </script>
+    <!-- Área principal -->
+    <div id="main-content">
+        <h2>Bienvenido a Time Bank</h2>
+        <h4>Estamos encantados de tenerte con nosotros. 
+        Explora nuestras funcionalidades y gestiona tus finanzas 
+        de manera fácil y segura. Si tienes alguna pregunta, nuestro equipo de soporte 
+        está aquí para ayudarte cuando gustes!.</h4>
+
+    <script>
+        function recargar(logo){
+            location.reload(); //recargar pagina 
+            }
+    </script>
+    </div> 
+
+
+    <script>
+        function mostrarContenido(seccion) {
+            var contenido = {
+                'home': `
+                    <h3>Inicio</h3>
+                    <p>Bienvenido a Time Bank. Aquí puedes gestionar todas tus cuentas y servicios financieros.</p>
+                    `,
+                'cuentas': `
+                    <h3>Cuentas</h3>
+                    <p>Consulta la información sobre tus cuentas bancarias, saldos y movimientos.</p>
+                `,
+                'prestamos': `
+                    <h3>Préstamos</h3>
+                    <p>Conoce nuestros productos de préstamos y solicita el que mejor se adapte a tus necesidades.</p>
+                `,
+                'tarjetas': `
+                    <h3>Transferencias</h3>
+                    <p>Realizar transferencia.</p>
+                `,
+            };
+
+            // Actualizar el contenido del área principal
+            document.getElementById('main-content').innerHTML = contenido[seccion];
+        }
+    </script>
+        <!-- Menú lateral -->
+        <br><br><br>
+
+<a href="#"></a>
+
+
+    
+<footer>  <a href="Políticas de Uso y Privacidad de Time Bank.ini" >Politicas de Uso y Privacidad de Time Bank</a></footer>
+</body>
+</html>

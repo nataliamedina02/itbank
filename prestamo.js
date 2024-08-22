@@ -3,6 +3,7 @@ function gen_table(){
     let n=Number(document.getElementById("capital").value);
     let n2=Number(document.getElementById("couta").value);
     let n3=Number(document.getElementById("interes").value);
+    // Verificar si el capital es mayor a 0
     if(n>0){   
         for(i=1;i<=n2;i++){
             ca=n/n2;

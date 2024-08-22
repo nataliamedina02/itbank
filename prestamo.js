@@ -1,11 +1,13 @@
 function gen_table(){
     document.getElementById("tab").innerHTML="";
+    // Obtener valores ingresados por el usuario: capital, cuotas e interés
     let n=Number(document.getElementById("capital").value);
     let n2=Number(document.getElementById("couta").value);
     let n3=Number(document.getElementById("interes").value);
     // Verificar si el capital es mayor a 0
     if(n>0){   
         for(i=1;i<=n2;i++){
+            // Calcular el capital por cuota
             ca=n/n2;
             d1=ca.toFixed(2);
             i2=((n*n3)/100)/n2;
